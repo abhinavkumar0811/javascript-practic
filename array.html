@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        //Array in js
+        // it is use to store the collection of an element
+        let num = [1, 2, 3, 4, 5, 6, 7, 'h', 'i', 'j'];
+        console.log(num);
+
+        // Array indics 
+        // it is plural form of an index it can store multiple values like :-
+        let exam = ['html', 'css', 'js', 'bootstrap', 'react', 'nodejs', 'sql', 'expressjs', 'python', 'dsa', 'mongo db', 'gihub'];
+        console.log(exam);
+
+        let arr = ['red', 'green', 'blue'];
+        console.log(arr);
+
+        // .length
+        // when we want to find the length of an array
+
+        let color = ['strawberry', 'orange', 'lemon yello'];
+        console.log(color.length);
+ 
+      // we can acess an element will the index value 
+       let index = [45,56,34,534,244,553,232,34,53,64];
+       console.log(index[5]);
+
+      //we can also exchange the existing array element because array is immutable
+      let colour = ['green','black','white','mangnite'];
+      console.log(colour); 
+      colour[2] = 'purple';
+      console.log(colour);
+
+
+      // Now we can print an array element using array method
+      let heros =['thor','ironman','hulk','mondy','pinkong'];
+      for(let idx = 0; idx<heros.length; idx++){
+        console.log(heros[idx]);
+      }
+
+      //using for of loop
+      let hero = ['virat kohli','kl rahul','akshay','sarukh','abraham'];
+      for(heros of hero){
+        console.log(heros);
+      }
+
+      //(Q1) print javascript charctor using for of loop
+         {
+            let arr = ['javascript'];
+            for(let char of arr){
+                console.log(char);
+            }
+         }
+        
+         // push pop method
+ 
+         // push()method is used to push the new element at the end of an array
+         {
+            let arr = ['tomato','potato','mango'];
+            arr.push('banana','carrot');
+            console.log(arr);
+
+         }
+         // pop() method is used to delete the element from the end of an array
+         {
+            let val = [23,34,45,46,53,32];
+            console.log(val.pop());
+            console.log(val);
+         }
+
+         {
+          let arr = ['tomato','potato','papaya'];
+          arr.pop();
+          console.log(arr);
+         }
+
+         //tostring method
+         // This method use to convert an array to string
+        
+         {
+          let arr = ['man','ban','lan'];
+          console.log(typeof arr.toString());
+          console.log(typeof arr);
+         }
+
+         // concat method
+         // this method is used  to join the multiple array and return another array
+
+         {
+          let arr = [34,34,34,53,23,65,34];
+          let arrb = ['potato', 'tomato','pumpkin'];
+          let add = arr.concat(arrb);
+          console.log(add); 
+
+         }
+
+         //unsift method 
+         //this method work same like a push methode  it use to add the element at the start of the array
+
+         {
+          let arr = [34,54,56,34,23,76,54];
+          arr.unshift(21,10,11);
+          console.log(arr);
+         }
+
+         //shift method
+         //this method same work like a pop method  it is used  to delete from the start of an array element
+
+         {
+          let arr = ['iroman','batman','folk','benten']
+          arr.shift();
+          console.log(arr);
+         }
+
+         //slice
+         //this method is used to return the part of an exitsing array element
+
+         {
+          let slice = ['nehal','akash','jigar','swara','shivang'];
+          console.log(slice);
+          console.log(slice.slice(0,3))
+         }
+
+         //splice method
+          // this methode is used to change the original array and it perform (add,replace, delete)action
+           // in the array.
+
+           {
+            let arr = ['lucky','vicky','dadu'];
+            console.log(arr);
+            arr.splice(1,2);    
+            console.log(arr); 
+                                           //pending
+          }
+
+
+
+
+    </script>
+</body>
+
+</html>

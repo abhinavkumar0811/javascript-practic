@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        //function in java script
+
+        function myfunction() {
+            console.log(' i love india');          //function define
+            console.log('we are learning js');   //function define
+        }
+
+        myfunction();
+
+        // function parameter and function argument and multiple pass parameter and argument
+
+
+        function massage(msg, n) {
+            console.log(msg * n); // we an pass multiple parameters 
+        }
+
+        console.log("i love js", 1000); //multiple arguments pass
+
+
+        // (Q1) make  a function which perform sum operation
+
+
+        function sum(x, y) {
+            console.log(x + y);
+        }
+
+        // Now we see the return keyword use
+
+        function add(a, b) { // pass to parameter
+            s = a + b;   // make a new variable
+            console.log('before return');    //it will excute because it use before the return keyword
+            return s;        // Return keyword used
+            console.log("after return");   // it will not excute  because it will use after the return;
+        }
+
+        let val = add(3, 4);   //for checking the output we can make the new variable 
+        console.log(val);        // it will excute 
+
+        //Arrow function
+        //compect way to wrinting a function 
+
+ // Sum arrow function       
+        let arrowsum = (a, b) => a + b;
+        console.log(arrowsum(9, 4));
+
+//multiplication arrow function
+       let arrowmul=(x,y)=> x *y;
+       console.log(arrowmul(4,5));
+
+//return will aslo use in arrow function
+
+let arrowdiv = (a, b) => a % b; // The arrow function automatically returns a % b
+console.log(arrowdiv(2, 5));    // Call the function with 2 and 5
+
+     
+   
+       //Callback function in javascript
+
+       function abcde() {
+    console.log("hello");
+}
+
+
+function myfunc() {
+   return abcde;
+}
+
+myfunc();
+  
+let returnfunc = myfunc();
+returnfunc();
+
+     
+                    //     revise function
+
+// function is a block of code that perform a specific task which can we call when ever needed
+ // function is divide into two part 
+       // 1) function defining
+       // 2) function call
+                 {
+                    function func(){
+                       console.log('hello function');
+                    }  // this all are call function defing
+                    func();   // calledd the functon calling
+                 }
+
+
+                 // parameter passing and agruments
+
+      // in function all parameter are calledthe function
+        {
+            function fun(x,y){ // two parameter pass in function (x and y);
+                let sum = x +y;
+                console.log(`Sum of ${x} and ${y} is ${sum}`);
+            }
+               fun(3,5);   //(3 and 5) are arguments 
+                  // arguments are pass  in  funcion call.
+        }
+
+         {
+            function funct(msg , n){
+               console.log(msg , n);
+            }
+            funct('i love  india', 1000);
+         }
+
+                       // return function in js
+            //when we want to take some value return then we use the return value
+              {
+                function retur(a,b){
+                    let sum = a * b;
+                    console.log('when any input pass before using return then it will excute');
+                    return sum ;
+                    console.log(' after using return value any output will not excute');
+                }
+                 let result = retur(2,3);
+                 console.log(`The result is ${result}`);
+              }           
+
+              {
+                function  mul(g,j){
+                    let sum = g % j === 0;
+                     return sum;
+
+                    
+                }
+                g = 5;
+                j = 5;
+                let result  = mul(g,j);
+                console.log(`The result of ${g} and ${j} is ${result}`);
+              }
+
+
+                               // arrow function
+             // Arrow function is a compect way of writing a function is was introduce in modern javascript.              
+                    {
+                        let  arrowsum = (a,b) => a+b;
+                          console.log(arrowsum(3,5));
+                    }   
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

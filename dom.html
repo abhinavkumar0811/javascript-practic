@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Welocome to js learning</title>
+    <style>
+        body{
+            background-color: purple;
+        }
+        h1{
+            background-color: pink;
+        }
+        h2{
+            background-color: aqua;
+        }
+        
+
+    </style>
+</head>
+<body>
+  <h1 id="head"> hello coders are you ready</h1>
+  <h2 class="myclass"> hello coders are you ready</h2>
+  <h3 class="#ids"> hello coders are you ready</h3>
+  <h4 class="myclass"> hello coders are you ready</h4>
+  <h5 class="myclass"> hello coders are you ready</h5>
+
+  <!-- parant child and sibling to navigating in dom  -->
+  <div>
+    <h1 #nam>eiyjeihjh</h1>
+    <h2 #nam>rkhekpf</h2>
+     <h3 #nam>gnehh</h3>
+  </div>
+
+  <div>
+    <h3>rgmdgjbj</h3>
+    <ul>
+        <li>tej</li>
+        <li>rrg</li>
+        <li>grgggg</li>
+        <li>gftgte</li>
+    </ul>
+  </div>
+
+  <p>paragraph1</p>
+  <p>paragraph2</p>
+  <p>kgrkfggbdgkn</p>
+  
+  
+</body>
+<script>
+           // get element by id name
+   let head = document.getElementById('head');
+   console.log(head);
+
+            // get element by class name
+   let myclass = document.getElementsByClassName('myclass');
+   console.log(myclass);
+
+                // get elemetnt by tag name
+   let paragraph = document.getElementsByTagName('p');
+   console.log(paragraph);
+
+
+                        //queary selector
+         // tag name
+     let tagg = document.querySelector('p');
+     console.log(tagg);    
+         // multiple tag name
+     let tagss = document.querySelectorAll('p');
+     console.log(tagss);
+     
+               //queary selector by class name
+     let my_class = document.querySelector('.myclass');
+     console.log(my_class);         
+         //multiple  selector by class name
+      let classes  = document.querySelectorAll('.myclass');
+      console.log(classes);
+      
+               //queary selector by element name
+       // in queary selector  it cannot select group of set
+               let ids = document.querySelector('#ids');
+                 console.log(ids);           
+
+
+                             // dom navigating to parant child and siblinig
+           let navin = document.querySelectorAll('div');
+           let navination = navin[1];
+           console.log(navination);
+           console.log(navination.children); //by the help of this we cna afind all child of the div element
+
+           // now finding the first child and second child
+                {
+                    let div = document.querySelectorAll('div');
+                    let secondDiv = div[1];
+                         // now finding the first child of div
+                     let firstchild = secondDiv.firstElementChild;
+                     console.log(firstchild);   
+                       let secondchild = secondDiv.lastElementChild;
+                       console.log(secondchild);
+                }
+
+            // now finding the siling element
+                {
+                    let ddiv = document.querySelectorAll('h3');
+                    let sibling =  ddiv.nextElementSibling;
+                    console.log(sibling);
+                }
+
+
+
+
+
+</script>
+</html>

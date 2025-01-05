@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Welocome to js learning</title>
+    <style>
+        body{
+            background-color: purple;
+        }
+        h1{
+            background-color: pink;
+        }
+        h2{
+            background-color: aqua;
+        }
+        
+
+    </style>
+</head>
+<body>
+  <h1 id="head"> hello coders are you ready</h1>
+  <h2 class="myclass"> hello coders are you ready</h2>
+  <h3 class="#ids"> hello coders are you ready</h3>
+  <h4 class="myclass"> hello coders are you ready</h4>
+  <h5 class="myclass"> hello coders are you ready</h5>
+
+  <!-- parant child and sibling to navigating in dom  -->
+  <div class="class">
+    <h1 #nam>eiyjeihjh</h1>
+    <h2 #nam>rkhekpf</h2>
+     <h3 #nam>gnehh</h3>
+  </div>
+
+  <div id="head">
+    <h3>rgmdgjbj</h3>
+    <ul>
+        <li>tej</li>
+        <li>rrg</li>
+        <li>grgggg</li>
+        <li>gftgte</li>
+    </ul>
+  </div>
+
+  <p>paragraph1</p>
+  <p>paragraph2</p>
+  <p>kgrkfggbdgkn</p>
+  
+  
+</body>
+<script>
+          
+                             //   attributes in dom
+            //when we want to get and set the attribute value then we use attribute property
+         
+   // Get attribute 
+   
+   {
+    let att = document.querySelectorAll('div');
+    let attr = att[1];
+    let div = attr.getAttribute('id');
+    console.log(div);
+   }
+
+   {
+    let att = document.getElementsByTagName('div');
+    let attr = att[0];
+    let div = attr.getAttribute('class');
+    console.log(div);
+   }
+
+ // Set the value
+ 
+ {
+    let a = document.getElementsByTagName('div');
+    let b = a[0];
+    console.log(b);
+    let c = b.setAttribute('class', '354264gs');
+    console.log(c);
+ }
+
+ {
+    let get = document.querySelectorAll('div');
+    let find = get[1];
+    let set = find.setAttribute('id', "the");
+    console.log(set);
+    console.log(find);
+ }
+
+
+
+
+
+</script>
+</html>

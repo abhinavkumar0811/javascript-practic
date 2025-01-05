@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Welocome to js learning</title>
+    <style>
+        body{
+            background-color: purple;
+        }
+        h1{
+            background-color: pink;
+        }
+        h2{
+            background-color: aqua;
+        }
+        
+
+    </style>
+</head>
+<body>
+  <h1 id="head"> hello coders are you ready</h1>
+  <h2 class="myclass"> hello coders are you ready</h2>
+  <h3 class="#ids"> hello coders are you ready</h3>
+  <h4 class="myclass"> hello coders are you ready</h4>
+  <h5 class="myclass"> hello coders are you ready</h5>
+
+  <!-- parant child and sibling to navigating in dom  -->
+  <div class="class">
+    <h1 #nam>eiyjeihjh</h1>
+    <h2 #nam>rkhekpf</h2>
+     <h3 #nam>gnehh</h3>
+  </div>
+
+  <div id="head">
+    <h3>rgmdgjbj</h3>
+    <ul>
+        <li>tej</li>
+        <li>rrg</li>
+        <li>grgggg</li>
+        <li>gftgte</li>
+    </ul>
+  </div>
+
+  <p>paragraph1</p>
+  <p>paragraph2</p>
+  <p>kgrkfggbdgkn</p>
+  
+  
+</body>
+<script>
+          
+                             // style in js 
+   // it can dynamically change the style of  the website and dynamically add the new style
+   
+ // changing in the website
+ {
+    let head  = document.querySelector('h1');
+     let style = head.style.backgroundColor = 'green';
+          head.innerText = 'hey champ';
+          head.style.fontSize = ' 26px';
+ }  
+
+
+                             //Inserting element 
+// When we want to add new element then we add element using insert properties.
+
+{
+    let btn = document.createElement('button');
+    let text = btn.innerText = 'hello';
+    console.log(text);
+}
+// now adding the element on the screen  the we use some property.
+                                 // node.apped(element) add in the internal in last
+                                 // node.prepend(element) add in the interal in first
+                                 // node.before(element) add in the outer just before
+                                 //node.after(element) add in the outer just after
+
+   let find = document.querySelectorAll('div');
+   let node = find[0];
+    if(node){
+        node.append(btn);
+        console.log('button is avaible on the screen');
+    }
+    else{
+        console.log('sorry button is not exist');
+    }
+
+
+
+
+
+</script>
+</html>

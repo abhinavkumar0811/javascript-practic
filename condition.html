@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        /*                                 //if statement
+       let theme = 'black';
+       if(theme==='white'){
+           console.log('you are in dark mode');
+       }
+       
+                                     //if else statement
+       // To find the even number by if else statament?
+       
+       let num = prompt('enter the number');
+       if(num%2===0){
+           console.log(`${num} is an even number`);
+       }
+       else{
+           console.log(`${num} is an odd number`)
+       }
+       
+                                  //if else if  statement
+        //make a theme with black,white,dark mode                           
+        {
+           let theme = prompt('Enter you theme for your website');
+        if(theme ==='dark'){
+           console.log('you are in dark mode');
+        }
+        else if(theme === 'white'){
+           console.log('you are in white mode');
+        }
+        else if(theme ==='dark'){
+           console.log('you are in dark theme');
+        }
+        else{
+           console.log('please select valid theme');
+        }
+       }
+       
+       // (Q1) Get a user to input a string using prompt or alert ('enter a number') now cheak if the number is
+       // mulptiple of 5 or not?
+       
+       {
+           let num = prompt('enter a number');
+           if(num%5 ===0){
+               console.log(num,' number is multiple of 5');
+           }
+           else{
+               console.log(num,' number is not multiple of 5');
+           }
+       }
+       
+       // (Q2)Write a program to check if a number entered by the user is positive, negative, or zero?
+       
+       {
+           let num = prompt('enter the number')
+            if(num<0){
+            console.log('this is negative number');
+            }
+            else if(num>0){
+               console.log('this number is positive number');
+            }
+            else{
+               console.log('this number is zero');
+            }
+       
+       }
+       
+       // (Q3) Take an input from the user and check if it is a valid number. If not, display an error message.
+       
+       {
+           let input = prompt('enter a number');
+           if(isNaN(input)){
+               console.log('ERROR : enter a valid number');
+           }
+           else{
+               console.log('It is a valid number');
+           }
+       }
+       
+       //(Q4) Write a program to find out if a given number is even or odd
+       
+       {
+           let num = prompt('enter the number');
+           if(num %2 === 0){
+               console.log(num,'is number is even');
+           }else{
+            console.log(num,'is not a odd number');
+           }
+       }
+           
+       
+       // (Q5) Create a program to check if an input number is divisible by both 3 and 5. 
+         
+       {
+           let num = prompt('enter the number');
+            if(num%3===0 && num%5===0){
+               console.log(num,'divisible by both 3 and 5');
+            }else{
+               console.log(num,'is not divided by 3 and 5');
+            }
+       }
+            
+       //(Q6) Write a program that asks the user to enter their age and checks whether they are eligible to vote
+       //  (18 years or older).
+       {
+           let     age = prompt('enter your age');
+           if(age>18){
+               console.log('you can vote');
+           }
+           else{
+               console.log('you can not vote');
+           }
+       }
+       
+       //(Q7) Write a program that takes two numbers from the user and performs 
+       // addition, subtraction, multiplication, or division based on user input for the operation.
+       
+       {
+           let num1 = prompt('Enter the first number');
+           let num2 = prompt('Enter the second number');
+           
+           let operation = prompt('Enter the operation (+,-,*,/)');
+       
+           let result;
+           if(operation === '+'){
+               result = num1 + num2;
+           } else if(operation === '-'){
+               result = num1 -num2;
+           }
+           else if(operation === '*'){
+               result = num1 * num2;
+           }
+       
+               else if (operation === '/') {
+           if (num2 !== 0) {
+             result = num1 / num2;
+               }else{
+                   console.log('Error : number is not divisible by zero');
+               }
+           }
+           else{
+               console.log('this operation is wrong please perform operation (+,-,*,/)');
+           }
+           console.log(`The Result of ${num1} ${operation} ${num2} is ${result}`);
+       
+       }
+       
+       
+       //(Q8) Write a program to check if an entered year is a leap year or not.
+       
+       {
+           let year = prompt('Enter your year');
+       
+          let leap_year;
+           if(year%4===0 && year%100!==0 || year%400===0){
+               console.log(`This ${year} is leap year`);
+           }
+           else{
+               console.log(`This ${year } is not a leap year`);
+           }
+       }
+
+        //(Q9)   Write a function trafficLight(color) that takes a color ("red", "yellow", or "green") 
+        // as input and returns the appropriate action:
+
+        //   "Stop" for red.
+        //   "Wait" for yellow.
+        //   "Go" for green.
+        //   Return "Invalid Color" for any other input.
+
+        {
+            let light = prompt('Enter the color');
+
+            if (light === 'green') {
+                console.log('you can go');
+            }
+            else if (light === 'yellow') {
+                console.log('you can wait');
+            }
+            else if (light === 'red') {
+                console.log('you will stop');
+            }
+            else {
+                console.log('invalid color for any input ')
+            }
+
+        }
+*/  
+   // create a function using if else condition that take a string and return the number of vowel as string
+
+   {
+    let b = prompt('Enter a single alphabet').toLowerCase(); 
+if (b === 'a' || b === 'e' || b === 'i' || b === 'o' || b === 'u') {
+      console.log(`${b} this is vowel`);
+} 
+else {
+    console.log(`${b} this is not a vowel`);
+}
+
+   }
+
+
+
+    </script>
+</body>
+
+</html>

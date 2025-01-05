@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Welocome to js learning</title>
+    <style>
+        body{
+            background-color: purple;
+        }
+        h1{
+            background-color: pink;
+        }
+        h2{
+            background-color: aqua;
+        }
+
+        div{
+            background-color: blue;
+            height: 80px;
+            width: 80px;
+            display: flex;
+            align-items: center;
+            
+        }
+        
+
+    </style>
+</head>
+<body>
+  <h1 id="head"> hello coders are you ready</h1>
+  <h2 class="myclass"> hello coders are you ready</h2>
+  <h3 class="#ids"> hello coders are you ready</h3>
+  <h4 class="myclass"> hello coders are you ready</h4>
+  <h5 class="myclass"> hello coders are you ready</h5>
+
+  <!-- parant child and sibling to navigating in dom  -->
+  <div>
+    <h1 #nam>eiyjeihjh</h1>
+    <h2 #nam>rkhekpf</h2>
+     <h3 #nam>gnehh</h3>
+  </div>
+
+  <div>
+    <h3>rgmdgjbj</h3>
+    <ul>
+        <li>tej</li>
+        <li>rrg</li>
+        <li>grgggg</li>
+        <li>gftgte</li>
+    </ul>
+  </div>
+
+
+
+  <p>paragraph1</p>
+  <p>paragraph2</p>
+  <p>kgrkfggbdgkn</p>
+
+                            <!--one clicked method-->
+  <button onclick="console.log('you are clicked'); alert('hello');">
+    click me!
+  </button>
+
+                              <!--doubble clicked method-->
+                              
+  <button>
+      Double Clicked!
+  </button>
+  <div>
+    mouse hover
+  </div>
+                            
+  
+</body>
+<script>
+
+                          //event object
+              // it save all the information about the event
+
+    let div = document.querySelectorAll('div');
+    let secdiv = div[2];
+    secdiv.onmouseover = function (evt)  {//it pass a parameter
+        console.log('ypu are inside the div');
+        alert('please shift form this div');
+         console.log(evt);   // when we want to see all save event property the we wnat to call the parameter
+       // type (when we want to see which type of event used  thenwe used)
+         console.log(evt.type);
+         console.log(evt.target);  // when we want to see the what is the target of the element
+         console.log(evt.clientx , clienty);       //pending
+    }       
+
+                        // Event lisner
+ //Event lisner is function in which it listen the event and when event come then it excute
+     // we can make multiple event listner of one element
+     {
+        let btn = document.getElementsByTagName('button');
+        let dbtn = btn[1];
+        //console.log(dbtn);
+            //add event lisner
+        dbtn.addEventListener('click', () => {
+            console.log('hello user welcome you in  the webbiie');
+        })
+       
+        let handler2 = function () {
+            console.log('hello user welcome you in the webbiie');
+        }
+        dbtn.addEventListener('click',handler2);
+          // removing the Even lisner
+          dbtn.removeEventListener('click', handler2);
+    }
+</script>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Welocome to js learning</title>
+    <style>
+        body{
+            background-color: purple;
+        }
+        h1{
+            background-color: pink;
+        }
+        h2{
+            background-color: aqua;
+        }
+
+        div{
+            background-color: blue;
+            height: 80px;
+            width: 80px;
+            display: flex;
+            align-items: center;
+            
+        }
+        
+
+    </style>
+</head>
+<body>
+  <h1 id="head"> hello coders are you ready</h1>
+  <h2 class="myclass"> hello coders are you ready</h2>
+  <h3 class="#ids"> hello coders are you ready</h3>
+  <h4 class="myclass"> hello coders are you ready</h4>
+  <h5 class="myclass"> hello coders are you ready</h5>
+
+  <!-- parant child and sibling to navigating in dom  -->
+  <div>
+    <h1 #nam>eiyjeihjh</h1>
+    <h2 #nam>rkhekpf</h2>
+     <h3 #nam>gnehh</h3>
+  </div>
+
+  <div>
+    <h3>rgmdgjbj</h3>
+    <ul>
+        <li>tej</li>
+        <li>rrg</li>
+        <li>grgggg</li>
+        <li>gftgte</li>
+    </ul>
+  </div>
+
+  <p>paragraph1</p>
+  <p>paragraph2</p>
+  <p>kgrkfggbdgkn</p>
+
+                            <!--one clicked method-->
+  <button onclick="console.log('you are clicked'); alert('hello');">
+    click me!
+  </button>
+
+                              <!--doubble clicked method-->
+                              
+  <button ondblclick="handlingdblclick()">
+      Double Clicked!
+  </button>
+
+  <div>
+    mouse hover
+  </div>
+                            
+  
+</body>
+<script>
+   //the chnage in the state of an object that is known as event
+   
+   function handlingdblclick (){
+    console.log('you are clickd');
+    alert('you are too good');
+   }
+
+   let div = document.querySelectorAll('div');
+   let secdiv = div[2];
+   
+   secdiv.onmouseover =  function () {
+      console.log('you are inside the box');    
+   }
+
+   {
+    let div = document.querySelectorAll('div');
+    let secdiv = div[1];
+    let child = secdiv.lastElementChild;
+     let lst_child = console.log(child);
+
+     lst_child.onclick = function()  {
+          console.log('please dont click on this iteam');
+          alert('leave it dude');
+     }
+   }
+
+</script>
+</html>

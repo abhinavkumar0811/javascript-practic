@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: purple;
+        }
+        h1{
+            background-color: pink;
+        }
+        h2{
+            background-color: aqua;
+        }
+        
+
+    </style>
+</head>
+<body>
+  <h1 id="head"> hello coders are you ready</h1>
+  <h2 class="myclass"> hello coders are you ready</h2>
+  <h3 class="#ids"> hello coders are you ready</h3>
+  <h4 class="myclass"> hello coders are you ready</h4>
+  <h5 class="myclass"> hello coders are you ready</h5>
+
+  <!-- parant child and sibling to navigating in dom  -->
+  <div>
+    <h1 #nam>eiyjeihjh</h1>
+    <h2 #nam>rkhekpf</h2>
+     <h3 #nam>gnehh</h3>
+  </div>
+
+  <div>
+    <h3>rgmdgjbj</h3>
+    <ul>
+        <li>tej</li>
+        <li>rrg</li>
+        <li>grgggg</li>
+        <li>gftgte</li>
+    </ul>
+  </div>
+
+  <p>paragraph1</p>
+  <p>paragraph2</p>
+  <p>kgrkfggbdgkn</p>
+  
+  
+    <script>
+
+// Dom manupultion property 
+      // dom manupulation propety allow developer to modify and chack the element and text in web page
+        
+        //when you  wna to change and view the content then we use
+                /*
+                   inner html - it return the text and html content of the element
+                   inner text - it return the text content of the element
+                   text content - get or set the text content of the element by ingoring the html tags
+
+                */
+
+                        //  inner text - it return the text content of the element
+
+      {     //for cheack what text exist in the htlm element text
+              let inner  =  document.querySelector('div');
+               console.log(inner.innerText);
+            }
+
+            {  // now set the value of the inner html element text 
+                 let inner = document.querySelector('div');
+               let  new_val = inner.innerText = 'happy new year';
+                 console.log(new_val);
+            }
+                 
+                  // inner html - it return the text and html content of the element
+
+            {
+              let htm = document.querySelectorAll('div');
+               let sec_htm = htm[1];
+               let inner = sec_htm.innerHTML;
+               let set = inner.innerHTML = '<p> again happy new year </p>';
+                console.log(set);
+            }
+
+
+
+           
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

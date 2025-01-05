@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //string in js
+
+
+        // string are use to represent and manuplate the the charactor encloed in single queots and 
+        // doubble queats.
+
+        //(Q1) finidng lengh of string using for of loop
+        {
+            let a = 'himanshu';
+            let length = 0;
+            for (let char of a) {
+                length++;
+            }
+            console.log('the length of himanhu is ', length);
+        }
+
+        // Templete literal in js
+
+        let obj = {
+            iteam: 'Pen',
+            cost: '10',
+        }
+        console.log(`The name of iteam is  ${obj.iteam} and its price is ${obj.cost}`);
+
+        // .length
+
+        let b = 'monty carloo';
+
+        console.log(b, b.length);
+
+        // (1) uppecase and lowercase  and trim  method
+        //touppercase()
+        let c = 'monty carlo';
+        let d = c.toUpperCase();
+        console.log(d); //when we call c  then it call  withuot changing because string is immutable 
+        // when we call d then it excute with changing because it call the new variable.
+
+        //tolowercase()
+        let m = 'MONTY CARLO';
+        let p = m.toLowerCase();
+        console.log(p);
+
+        // trim methode 
+        // it is used to trim all the white space from the start to end
+
+        let s = '      the month of holiday';
+        console.log(s.trim());
+
+        //(2) slice and concate and replace and charat method
+
+        // slice method is use to extract the part of the string
+        let str = '12345678';
+        console.log(str.slice(5));
+
+        //concate method is use to join the two string with each other.
+        let joi = 'saturday';
+        let bot = 'friday';
+
+        let mix = joi.concat(bot); // we also use + sign on the place of concate for join the two string
+        // let mix = joi + bot;
+        console.log(mix);
+
+
+        //replace method
+        // it is use to search the value in sting and replace it from another new value
+        {
+            let x = 'hellowe';
+            console.log(x.replace('we', 'o'));
+        }
+        //charat metod
+        // it is used to find the string by  index value the and when index will empty then it return empty string
+        // on the place of undifind.
+        {
+            let str = 'namaskar';
+            console.log(str.charAt(3));
+        }
+
+     // (Q2) The for...of loop is a cleaner and more modern way to iterate through each character in a string.
+     
+             {
+                let str = 'hello'
+                for(let char of str){
+                    console.log(str);
+                }
+             }
+
+
+
+    </script>
+</body>
+
+</html>
